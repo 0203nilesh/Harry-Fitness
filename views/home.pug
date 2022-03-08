@@ -1,0 +1,65 @@
+//- This is how you can extend the Pug file which is written in the other editor but you can edit it here also.
+extends base.pug
+
+block scripts 
+    scripts 
+      include ../static/script.js
+
+block style 
+    style
+        include ../static/style.css
+
+block content 
+    //- This Navbar became the part of the Base.pug and we can not have to use it everywhere.
+    //- nav#navbar
+    //-     ul
+    //-         //- By using this pound symbol before the square bracket we can describe the anchor tag
+    //-         div#logo 
+    //-             img(src='../static/Images/logo.png')
+    //-             h4 HDA
+    //-         li #[a(href='/') Home ]
+    //-         li #[a(href='/') About  ]
+    //-         li #[a(href='/') Services]
+    //-         li #[a(href='/') Class Info]
+    //-         li #[a(href='/') Contact us]
+    section#infosection 
+        div Welcome to Harry's dance academy 
+        div.small Eat Dance Sleep and repeat
+
+    section#ourmission 
+        h2 Our Mission
+        div.card 
+          h3 Dance perfection
+          div.card-box 
+            div.card-img
+              img(src="../static/Images/img1.png", alt="Images")
+            div.card-content 
+              p This is the best dance academy of the universe.
+
+        div.card 
+          h3 Dance the way you like
+          div.card-box  
+            div.card-img 
+              img(src="../static/Images/img4.png", alt="Images")
+            div.card-content 
+              p This is the best dance academy of the universe.
+
+
+        div.card 
+          h3 Expert Teaching
+          div.card-box 
+            div.card-img
+              img(src="../static/Images/img5.png", alt="Images")
+            div.card-content 
+              p This is the best dance academy of the universe.
+
+
+    section#sponsorsection 
+        h3 Our Sponsors 
+        div.sponssor 
+          img(src="/static/Images/apple.png", alt="apple sponsor")
+          img(src="/static/Images/hp.png", alt="hp sponsor")
+          img(src="/static/Images/microsoft.png", alt="microsoft sponsor")
+          img(src="/static/Images/skype.png", alt="skype sponsor")
+    //- footer#footer 
+    //-     |  Copyright &copy 2022 All rights are reserved HarryDanceAcademy.com

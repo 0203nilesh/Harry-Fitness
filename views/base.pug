@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Harry Dance Academy
+    block scripts 
+    block style
+    nav#navbar
+        ul
+            //- By using this pound symbol before the square bracket we can describe the anchor tag
+            div#logo 
+                img(src='../static/Images/logo.png')
+                h4 HDA
+            li #[a(href='/') Home ]
+            li #[a(href='/') About  ]
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/contact') Contact us]
+  body
+    block content
+    block foot
+        footer#footer 
+            |   Copyright &copy 2022 All rights are reserved HarryDanceAcademy.com
